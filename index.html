@@ -18,7 +18,7 @@
 </html>
 
 <body>
-  <header class="absolute w-full z-50 top-0">
+  <header class="z-1000 w-full z-50 top-0    absolute">
     <nav class="min-w-max  ">
       <div class="container mx-auto px-4 py-6 flex justify-between items-center">
         <div class="font-bold text-2xl ">ali</div>
@@ -35,72 +35,90 @@
           <i class="fa-solid fa-bars text-3xl" onclick="change(this)"></i>
         </button>
       </div>
-                <div class="md:hidden  ">
-                  <div id="mobile-menu" class="absolute top-0 p-8  bg-emerald-400">
-                    <div class="font-bold text-2xl text-red-50 ">ali</div>
-                    <ul class="space-y-6 py-10">
-                      <li><a href="#">Portfolio</a></li>
-                      <li><a href="#">About</a></li>
-                      <li><a href="#">Contact</a></li>
-                      <li><a href="#">Social</a></li>
-                      <li><a href="#" class="py-2 w-fit px-6 rounded-full text-white bg-orange-200">Call
-                          Me</a></li>
-                    </ul>
-                  </div>
-                </div>
+      <div class="md:hidden  ">
+        <div id="mobile-menu" class="absolute top-0 p-8  bg-emerald-400">
+          <div class="font-bold text-2xl text-red-50 ">ali</div>
+          <ul class="space-y-6 py-10">
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Social</a></li>
+            <li><a href="#" class="py-2 w-fit px-6 rounded-full text-white bg-orange-200">Call
+                Me</a></li>
+          </ul>
+        </div>
+      </div>
     </nav>
   </header>
 
-<div class="swiper mySwiper h-dvh md:flex hidden ">
-  <div class="swiper-wrapper ">
-    <div class="swiper-slide   flex items-center justify-center text-2xl font-bold">
-      <div class=" relative  w-full h-full z-99 ">
-        <img src="./images/pexels-pixabay-531880.jpg" alt="" >
+  <div class="swiper mySwiper  md:flex hidden ">
+    <div class="swiper-wrapper ">
+      <!--  -->
+      <div class="swiper-slide bg-cover   flex items-center justify-center text-2xl font-bold">
+        <div class=" relative  z-99 ">
+          <img src="./images/pexels-christina-morillo-1181396.jpg" alt="">
+        </div>
+        <div class="image-data  absolute text-red-600">
+          <h1>ali</h1>
+          <p>Lorem ipsum dolor sit amet consectet</p>
+        </div>
       </div>
-      <div class="image-data  absolute text-red-600">
-        <h1>ali</h1>
-        <p>Lorem ipsum dolor sit amet consectet</p>
-      </div>
+        <!--  -->
+        <div class="swiper-slide bg-cover   flex items-center justify-center text-2xl font-bold">
+          <div class=" relative  z-99 ">
+            <img src="./images/pexels-christina-morillo-1181396.jpg" alt="">
+          </div>
+          <div class="image-data  absolute text-red-600">
+            <h1>ali</h1>
+            <p>Lorem ipsum dolor sit amet consectet</p>
+          </div>
+        </div>
+        <!--  -->
+              <div class="swiper-slide bg-cover   flex items-center justify-center text-2xl font-bold">
+                <div class=" relative  z-99 ">
+                  <img src="./images/pexels-christina-morillo-1181396.jpg" alt="">
+                </div>
+                <div class="image-data  absolute text-red-600">
+                  <h1>ali</h1>
+                  <p>Lorem ipsum dolor sit amet consectet</p>
+                </div>
+              </div>
+      <div class="swiper-pagination"></div>
     </div>
-    <div class="swiper-slide   flex items-center justify-center text-2xl font-bold">
-      <div class=" relative  z-99 w-full h-full z-99">
-        <img src="./images/pexels-pixabay-531880.jpg" alt="">
-      </div>
-      <div class="image-data  absolute text-red-600">
-        <h1>ali</h1>
-        <p>Lorem ipsum dolor sit amet consectet</p>
-      </div>
-    </div>
-    <div class="swiper-pagination"></div>
+  
   </div>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      pagination: {
+        el: ".swiper-pagination",
+        dynamicBullets: true,
+      },
+      autoplay: {
+        delay: 5000, // Delay between slides in milliseconds (5 seconds in this example)
+      },
+    });
+  </script>
+
+  <!-- mobile-->
+  <section class="bg-gradient-to-r from-blue-500 to-indigo-600 text-white md:hidden ">
+    <div class="container mx-auto px-4 py-24">
+      <h1 class="text-4xl md:text-6xl font-bold mb-4">Welcome to our Website</h1>
+      <p class="text-lg md:text-xl mb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sit amet justo
+        vitae
+        velit sollicitudin facilisis in ut quam.</p>
+      <a href="#"
+        class="bg-white text-blue-500 font-semibold py-3 px-6 rounded-full shadow-md hover:bg-blue-400 transition duration-300">Learn
+        More</a>
+    </div>
+  </section>
+<div>
+  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem sit exercitationem odio ducimus sint dolores, iste totam voluptatem. Ut praesentium vel optio est commodi. Repellat aliquid eligendi exercitationem aut saepe!</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum mollitia saepe eius optio laborum magni aperiam, amet, quisquam corrupti adipisci id est libero aspernatur obcaecati iure consequuntur laudantium cumque provident?
+</p>
 </div>
-<!-- Swiper JS -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<!-- Initialize Swiper -->
-<script>
-  var swiper = new Swiper(".mySwiper", {
-    pagination: {
-      el: ".swiper-pagination",
-      dynamicBullets: true,
-    },
-    autoplay: {
-      delay: 5000, // Delay between slides in milliseconds (5 seconds in this example)
-    },
-  });
-</script>
-
-<!-- mobile-->
-<section class="bg-gradient-to-r from-blue-500 to-indigo-600 text-white md:hidden ">
-  <div class="container mx-auto px-4 py-24">
-    <h1 class="text-4xl md:text-6xl font-bold mb-4">Welcome to our Website</h1>
-    <p class="text-lg md:text-xl mb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sit amet justo vitae
-      velit sollicitudin facilisis in ut quam.</p>
-    <a href="#"
-      class="bg-white text-blue-500 font-semibold py-3 px-6 rounded-full shadow-md hover:bg-blue-400 transition duration-300">Learn
-      More</a>
-  </div>
-</section>
-
-<!-- Js File -->
+  <!-- Js File -->
   <script src="./main.js"></script>
 </body>
